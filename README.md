@@ -36,6 +36,15 @@ Your browser opens the setup portal. Pick an outcome, paste your OpenRouter
 key, and finish. X1 then produces your first result while you watch, which
 takes a minute or two, and schedules it to run daily.
 
+Search is included and free during the beta, so there is nothing else to set
+up. You can use your own Brave key instead, or turn search off entirely.
+
+**Ask it for anything, then keep it.** Under every answer there is a
+"Schedule it daily" control. One click turns that answer into a standing job
+that runs each day and files the result in your vault. That is the part we
+most want your opinion on: not the answer, but whether having it arrive
+tomorrow without asking is worth anything.
+
 ## What we would like to know
 
 Five questions. Short answers are fine, and blunt answers are better than
@@ -64,6 +73,8 @@ Telling you up front so you do not waste time reporting what we already know:
 - Some outcomes are stronger than others. The market brief and sourced
   research are the most developed.
 - There is no account, no billing, and nothing to pay for in this build.
+- The chat and the scheduler share one runtime, so a long scheduled run can
+  make chat feel slow for a minute.
 
 ## Day to day
 
@@ -83,3 +94,14 @@ owner-only permissions and never leaves your machine. We never see it. Set a
 spend limit on it at
 [openrouter.ai/settings/keys](https://openrouter.ai/settings/keys) if you want
 a hard ceiling, which is a good habit with any agent.
+
+## The boring but important part
+
+X1 is beta software provided as is, under the licence included with it. You
+choose which model provider and which search to connect. Where you choose a
+cloud provider, the context a task needs is sent to that provider and handled
+under their terms, not ours. Anything the agent drafts is a draft: it does not
+send messages, place orders, or make purchases on your behalf.
+
+Please do not point it at anything you cannot afford to have go wrong while
+it is this young.
