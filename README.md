@@ -47,15 +47,34 @@ tomorrow without asking is worth anything.
 
 ## What we would like to know
 
-Five questions. Short answers are fine, and blunt answers are better than
-polite ones.
+Short answers are fine, and blunt answers are better than polite ones.
 
-1. **Did you get to a result without help?** If you got stuck, where exactly?
-2. **Was the first result worth having?** Would you have wanted it tomorrow
+**Getting here**
+
+1. **Where did you first hear what X1 does, and did the page explain it?**
+   Anything on xscaleai.com/x1 that confused you or sounded like marketing?
+2. **Did the install page tell you everything you needed before you started?**
+   What did you have to work out yourself?
+
+**Installing**
+
+3. **Did you get to a result without help?** If you got stuck, where exactly,
+   and what did you do about it?
+4. **How long did it take, start to finish?** A rough number is fine.
+
+**Using it**
+
+5. **Was the first result worth having?** Would you have wanted it tomorrow
    morning without asking?
-3. **What did you expect it to do that it did not?**
-4. **What would make you keep it installed a month from now?**
-5. **What would you pay for, if anything?** Naming nothing is a useful answer.
+6. **Did you schedule anything?** If not, what stopped you? This is the answer
+   we care about most, because it is the whole idea.
+7. **What did you expect it to do that it did not?**
+
+**Keeping it**
+
+8. **What would make you keep it installed a month from now?**
+9. **What would you pay for, if anything?** Naming nothing is a useful answer,
+   and so is naming a number that seems too low.
 
 Use the **Feedback** button in the portal header. It opens an email with the
 version and configuration already filled in, which saves you describing your
@@ -83,8 +102,14 @@ Telling you up front so you do not waste time reporting what we already know:
     ./scripts/backup-data.sh       # verified private backup
     ./scripts/factory-reset.sh     # delete all data, with confirmation
 
-Your data is in the Docker volume `xscaleai-paa-data` on your machine. Nothing
-is uploaded anywhere, and there is no telemetry in this build. If you want to
+Your data is in the Docker volume `xscaleai-paa-data` on your machine.
+
+**One thing we do send.** During the beta X1 reports anonymous usage counts so
+we can see where people get stuck: a random install id, which outcome you
+chose, whether runs succeed, how long they take, and counts of messages. Never
+your prompts, your results, your files or your keys, and never anything that
+identifies you. The allowlist is enforced in code. Put `PAA_TELEMETRY=off` in
+`.env` and it stops entirely, with nothing else changing. If you want to
 be rid of X1 entirely, `factory-reset.sh` and then delete the folder.
 
 ## Your key
