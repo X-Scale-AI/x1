@@ -4,7 +4,7 @@
 # stack. Piping this from the site is the one delivery path macOS never
 # quarantines, so it works without a signing certificate.
 #
-#   curl -fsSL https://xscaleai.com/x1/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/X-Scale-AI/x1/main/x1-install.sh | bash
 #
 # Reads, in order of precedence:
 #   X1_RELEASE_URL   tarball to install (default: the pinned release below)
@@ -32,7 +32,7 @@ step "Checking this machine..."
 case "$(uname -s)" in
     Darwin) host_os="macOS" ;;
     Linux)  host_os="Linux" ;;
-    *)      fail "X1 supports macOS and Linux here. On Windows use the PowerShell installer: https://xscaleai.com/x1/install.ps1" ;;
+    *)      fail "X1 supports macOS and Linux here. On Windows use the PowerShell installer: https://raw.githubusercontent.com/X-Scale-AI/x1/main/x1-install.ps1" ;;
 esac
 
 case "$(uname -m)" in

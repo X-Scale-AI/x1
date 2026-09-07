@@ -1,6 +1,6 @@
 # X1 installer for Windows.
 #
-#   irm https://xscaleai.com/x1/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/X-Scale-AI/x1/main/x1-install.ps1 | iex
 #
 # Requires Docker Desktop with the WSL2 backend and Linux containers.
 
