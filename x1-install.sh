@@ -14,7 +14,7 @@
 set -euo pipefail
 
 X1_HOME="${X1_HOME:-$HOME/.xscaleai/x1}"
-X1_RELEASE_URL="${X1_RELEASE_URL:-https://github.com/X-Scale-AI/x1/releases/latest/download/x1.tar.gz}"
+X1_RELEASE_URL="${X1_RELEASE_URL:-https://github.com/X-Scale-AI/x1/releases/download/v0.3.0-beta/x1.tar.gz}"
 
 say()  { printf '  %s\n' "$*"; }
 step() { printf '\n  %s\n' "$*"; }

@@ -7,7 +7,7 @@
 $ErrorActionPreference = 'Stop'
 
 $X1Home = if ($env:X1_HOME) { $env:X1_HOME } else { Join-Path $env:LOCALAPPDATA 'XScaleAI\X1' }
-$ReleaseUrl = if ($env:X1_RELEASE_URL) { $env:X1_RELEASE_URL } else { 'https://github.com/X-Scale-AI/x1/releases/latest/download/x1.tar.gz' }
+$ReleaseUrl = if ($env:X1_RELEASE_URL) { $env:X1_RELEASE_URL } else { 'https://github.com/X-Scale-AI/x1/releases/download/v0.3.0-beta/x1.tar.gz' }
 
 function Say  { param($m) Write-Host "  $m" }
 function Step { param($m) Write-Host ""; Write-Host "  $m" }
