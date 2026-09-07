@@ -1,0 +1,9 @@
+Copyright 2026 XScaleAI. All rights reserved.
+
+This MVP package is provided for internal evaluation and testing. No public
+redistribution license is granted for the XScaleAI-authored onboarder,
+configuration, workflows, or documentation in this package unless XScaleAI
+publishes a separate license.
+
+Third-party components retain their respective licenses and service terms.
+See THIRD-PARTY-NOTICES-v1.md.
